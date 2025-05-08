@@ -1,0 +1,103 @@
+[
+  {
+    "id": "1",
+    "title": "Et fortryllende fristende spejl",
+    "description": "Natten har lagt sig over de digitale sletter. Du sidder ved lejrbålet og tænder din ManaMirror™ for at tjekke GramGram og RuneMail. Pludselig dukker en besked op: 'Tænkte på dig... klik her 🖤' – sendt af sexyelfprincess. Hun ligner skræmmende meget din eks fra Magiskolen...",
+    "choices": [
+      {
+        "text": "Klik på linket – måske er det virkelig hende?",
+        "consequence": "Du klikker... og straks eksploderer dit ManaMirror i pop-ups om OrkPower™ og magisk potens. En virus er løs.",
+        "correct": false,
+        "nextId": "2a"
+      },
+      {
+        "text": "Ignorér beskeden – det lugter af sort kode.",
+        "consequence": "Du blokerer hende og aktiverer din runebeskyttelse. Spejlet falder til ro.",
+        "correct": true,
+        "nextId": "2b"
+      }
+    ]
+  },
+  {
+    "id": "2a",
+    "title": "Pop-ups og forbandelser",
+    "description": "Dit spejl flimrer med annoncer og dine kontakt-runer opfører sig mærkeligt. Du ved, du har tiltrukket mørk kode. Hvad gør du?",
+    "choices": [
+      {
+        "text": "Installer en mystisk 'rense-app' du fandt via reklamen.",
+        "consequence": "Du installerer den... og giver ubevidst adgang til hele dit system. Mørket breder sig.",
+        "correct": false,
+        "nextId": "3a"
+      },
+      {
+        "text": "Kobl spejlet fra og kontakt en certificeret MagikerSupport™-troldmand.",
+        "consequence": "Du nulstiller spejlet og får hjælp. De fleste data reddes.",
+        "correct": true,
+        "nextId": "3b"
+      }
+    ]
+  },
+  {
+    "id": "2b",
+    "title": "Kroens varme og skyggernes kulde",
+    "description": "Du ankommer til Den Kodeløse Kro. Din ManaMirror trænger til opladning, og du skal på toilet. Kroejer Gundrik er en gammel bekendt og tilbyder at holde øje med spejlet for dig.",
+    "choices": [
+      {
+        "text": "Lås spejlet med din adgangsformular, før du går.",
+        "consequence": "Spejlet lyser op i sikkerhedslås. Skyggen i hjørnet sukker og lusker væk.",
+        "correct": true,
+        "nextId": "3b"
+      },
+      {
+        "text": "Efterlad spejlet åbent – Gundrik er jo til at stole på!",
+        "consequence": "Skyggen i hjørnet er ikke Gundrik. Den kopierer dine data i det skjulte.",
+        "correct": false,
+        "nextId": "3a"
+      }
+    ]
+  },
+  {
+    "id": "3a",
+    "title": "OracleSoft ringer",
+    "description": "Dit spejl vibrerer. En stemme siger: 'Dette er OracleSoft™. Vi har fundet en trussel i dit system. Giv fjernadgang nu!'",
+    "choices": [
+      {
+        "text": "Giv adgang – de lyder professionelle.",
+        "consequence": "Din ManaMirror bliver sort. Du mærker hvordan dine magiske konti tømmes.",
+        "correct": false,
+        "nextId": "end_bad"
+      },
+      {
+        "text": "Afvis opkaldet og meld det til Det Digitale Råd.",
+        "consequence": "Du ignorerer svindleren og advarer andre. En lille sejr mod mørket.",
+        "correct": true,
+        "nextId": "end_mid"
+      }
+    ]
+  },
+  {
+    "id": "3b",
+    "title": "Den mystiske QR-runesten",
+    "description": "En glødende QR-runesten står midt på vejen. Et skilt siger 'Scan for belønning'.",
+    "choices": [
+      {
+        "text": "Scan den straks – måske er det en bonus fra Magirådet!",
+        "consequence": "Du åbner portalen... og slipper en sporingsforbandelse løs.",
+        "correct": false,
+        "nextId": "end_mid"
+      },
+      {
+        "text": "Lad den være – det lugter af phishing.",
+        "consequence": "Du går videre. Et renset sind og sikre data følger dig.",
+        "correct": true,
+        "nextId": "end_good"
+      }
+    ]
+  }
+]
+
+
+
+
+
+  

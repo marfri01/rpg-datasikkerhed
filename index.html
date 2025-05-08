@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasikkerhed i Fantasy-Verdenen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnjs.com/css?family=Cinzel:400,700|Cormorant+Garamond:400,600|EB+Garamond:400,500,600" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="loading-overlay" id="loadingOverlay" aria-label="Indlæsningsskærm">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p class="loading-text">Åbner den digitale portal...</p>
+    </section>
+
+    
+    <section class="portal-transition" id="portalTransition" aria-hidden="true">
+    </section>
+
+    
+    <main class="container fade-in" id="mainContent" style="display: none;">
+        <header>
+            <h1>Datasikkerhedens Vogtere</h1>
+            <h2>En rejse gennem De Digitale Lande</h2>
+        </header>
+
+        <section class="content-panel">
+            <div class="intro-text">
+                <p>Velkommen, modige sjæl, til De Digitale Lande. Et mystisk rige på randen af undergang, hvor skygger lurer i kode og mørke algoritmer væver deres net omkring de uvidende.</p>
+                <p>Troldmænd af kode manipulerer den godtroende, skyggeløbere stjæler adgangskoder som tyvene i natten, og virusdrager spreder deres ødelæggende ild gennem netværkets årer.</p>
+                <p>Vi har brug for en vogter - en med viden og styrke til at bekæmpe disse trusler. Betragt denne vision af de farer, der truer riget, og forbered dig på din skæbne.</p>
+            </div>
+        </section>
+
+        <section class="video-container" id="introVideo">
+            <video class="intro-video" controls poster="img/introvideostill.png">
+                <source src="video/fantasy-endless-hole-landscape.mp4" type="video/mp4">
+                Din browser understøtter ikke video-elementet.
+            </video>
+        </section>
+
+        <section class="center-content fade-in-slow">
+            <button id="showCharacterSelection" class="btn">Fortsæt eventyret</button>
+        </section>
+
+        
+        <section id="characterSelectionSection" style="display:none;">
+            <h2 class="section-title">Vælg din vogter</h2>
+            
+            <div class="character-selection" id="characterSelection">
+                
+                <article class="character-card" data-character="human">
+                    <div class="character-image human-image" aria-label="Menneske karakter"></div>
+                    <div class="character-content">
+                        <h3 class="character-title">Menneske</h3>
+                        <p class="character-desc">Tilpasningsdygtige og alsidige. Mennesker har god forståelse for både teknologi og social interaktion, hvilket gør dem stærke mod phishing-angreb.</p>
+                        <div class="stat-box">
+                            <span class="stat-label">Phishing-forsvar</span>
+                            <div class="stat-bar" aria-label="Phishing-forsvar: 85%"><div class="stat-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Teknisk viden</span>
+                            <div class="stat-bar" aria-label="Teknisk viden: 70%"><div class="stat-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Social intuition</span>
+                            <div class="stat-bar" aria-label="Social intuition: 80%"><div class="stat-fill" style="width: 80%;"></div></div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="character-card" data-character="elf">
+                    <div class="character-image elf-image" aria-label="Elver karakter"></div>
+                    <div class="character-content">
+                        <h3 class="character-title">Elver</h3>
+                        <p class="character-desc">Vise og tålmodige. Elvere har en dyb forståelse for kryptering og sikkerhedsforanstaltninger, men kan være sårbare over for social manipulation.</p>
+                        <div class="stat-box">
+                            <span class="stat-label">Krypteringskunst</span>
+                            <div class="stat-bar" aria-label="Krypteringskunst: 90%"><div class="stat-fill" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Teknisk viden</span>
+                            <div class="stat-bar" aria-label="Teknisk viden: 85%"><div class="stat-fill" style="width: 85%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Social intuition</span>
+                            <div class="stat-bar" aria-label="Social intuition: 60%"><div class="stat-fill" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+                </article>
+
+                
+                <article class="character-card" data-character="orc">
+                    <div class="character-image orc-image" aria-label="Ork karakter"></div>
+                    <div class="character-content">
+                        <h3 class="character-title">Ork</h3>
+                        <p class="character-desc">Stærke og direkte. Orker er fremragende til at opspore malware og virus-angreb, men kan have vanskeligt ved at gennemskue mere subtile trusler.</p>
+                        <div class="stat-box">
+                            <span class="stat-label">Virus-detektion</span>
+                            <div class="stat-bar" aria-label="Virus-detektion: 95%"><div class="stat-fill" style="width: 95%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Teknisk styrke</span>
+                            <div class="stat-bar" aria-label="Teknisk styrke: 80%"><div class="stat-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Tålmodighed</span>
+                            <div class="stat-bar" aria-label="Tålmodighed: 55%"><div class="stat-fill" style="width: 55%;"></div></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="center-content">
+                <button id="startAdventure" class="btn" disabled>Påbegynd Dit Eventyr</button>
+            </div>
+        </section>
+    </main>
+
+    
+    <section id="scenarioSection" class="scenario-section" style="display:none;">
+        <h2 id="scenarioTitle"></h2>
+        <p id="scenarioDescription"></p>
+        <div id="choiceButtons" class="choice-container"></div>
+      
+        <div id="feedbackMessage" class="feedback-message hidden">
+            <p id="feedbackText"></p>
+            <button id="nextQuestBtn" class="btn">Næste quest</button>
+        </div>
+    </section>
+      
+
+    <aside class="security-bar-container" id="securityContainer" style="display: none;">
+        <label for="securityBar">Sikkerhedsniveau</label>
+        <progress id="securityBar" value="3" max="5"></progress>
+    </aside>
+      
+    <script src="script.js"></script>
+</body>
+</html>
