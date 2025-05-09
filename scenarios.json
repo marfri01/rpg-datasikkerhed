@@ -1,17 +1,17 @@
 [
   {
     "id": "1",
-    "title": "Et fortryllende fristende spejl",
-    "description": "Natten har lagt sig over de digitale sletter. Du sidder ved lejrbålet og tænder din ManaMirror™ for at tjekke GramGram og RuneMail. Pludselig dukker en besked op: 'Tænkte på dig... klik her 🖤' – sendt af sexyelfprincess. Hun ligner skræmmende meget din eks fra Magiskolen...",
+    "title": "En flamme i natten",
+    "description": "Natten har lagt sig over de digitale sletter. Du sidder ved lejrbålet og tænder din MagicMirror tablet for at tjekke GramGram og RuneMail. Pludselig dukker en besked op: 'Tænkte på dig... klik her 🖤' – sendt af sexyelfprincess1768xxx. Hun ligner skræmmende meget din eks-fling fra sidste sommer...",
     "choices": [
       {
-        "text": "Klik på linket – måske er det virkelig hende?",
-        "consequence": "Du klikker... og straks eksploderer dit ManaMirror i pop-ups om OrkPower™ og magisk potens. En virus er løs.",
+        "text": "Klik på linket – måske er det hende?",
+        "consequence": "Du klikker... og straks eksploderer din MagicMirror i pop-ups om Ork PowerPills™ og magisk potens. En virus er løs.",
         "correct": false,
         "nextId": "2a"
       },
       {
-        "text": "Ignorér beskeden – det lugter af sort kode.",
+        "text": "Ignorér beskeden – det lugter af mørk kode.",
         "consequence": "Du blokerer hende og aktiverer din runebeskyttelse. Spejlet falder til ro.",
         "correct": true,
         "nextId": "2b"
@@ -24,7 +24,7 @@
     "description": "Dit spejl flimrer med annoncer og dine kontakt-runer opfører sig mærkeligt. Du ved, du har tiltrukket mørk kode. Hvad gør du?",
     "choices": [
       {
-        "text": "Installer en mystisk 'rense-app' du fandt via reklamen.",
+        "text": "Installer en mystisk 'rense-app' du fandt via pop-ups.",
         "consequence": "Du installerer den... og giver ubevidst adgang til hele dit system. Mørket breder sig.",
         "correct": false,
         "nextId": "3a"
@@ -40,17 +40,17 @@
   {
     "id": "2b",
     "title": "Kroens varme og skyggernes kulde",
-    "description": "Du ankommer til Den Kodeløse Kro. Din ManaMirror trænger til opladning, og du skal på toilet. Kroejer Gundrik er en gammel bekendt og tilbyder at holde øje med spejlet for dig.",
+    "description": "Du ankommer til Den Kodeløse Kro. Din MagicMirror tablet trænger til opladning, og du skal på toilet. Kroejer Gundrik er en gammel bekendt og du beder ham a holde øje med spejlet for dig.",
     "choices": [
       {
         "text": "Lås spejlet med din adgangsformular, før du går.",
-        "consequence": "Spejlet lyser op i sikkerhedslås. Skyggen i hjørnet sukker og lusker væk.",
+        "consequence": "Din tablet lyser op i sikkerhedslås. Skyggen i hjørnet sukker og lusker væk.",
         "correct": true,
         "nextId": "3b"
       },
       {
-        "text": "Efterlad spejlet åbent – Gundrik er jo til at stole på!",
-        "consequence": "Skyggen i hjørnet er ikke Gundrik. Den kopierer dine data i det skjulte.",
+        "text": "Efterlad tabletten åbent på bordet – Gundrik holder øje med at ingen snupper den!",
+        "consequence": "Skyggen ved bordet ved siden af har frit udsyn til din skræm. Den kopierer dine data i det skjulte.",
         "correct": false,
         "nextId": "3a"
       }
@@ -59,11 +59,11 @@
   {
     "id": "3a",
     "title": "OracleSoft ringer",
-    "description": "Dit spejl vibrerer. En stemme siger: 'Dette er OracleSoft™. Vi har fundet en trussel i dit system. Giv fjernadgang nu!'",
+    "description": "Din SpellPhone™ vibrerer i din lomme. Du tager den op og besvarer. En stemme siger: 'Dette er OracleSoft. Vi har fundet en trussel i din MagicMirrors system. Giv fjernadgang nu!'",
     "choices": [
       {
         "text": "Giv adgang – de lyder professionelle.",
-        "consequence": "Din ManaMirror bliver sort. Du mærker hvordan dine magiske konti tømmes.",
+        "consequence": "Din MagicMirror tablet bliver sort. Du mærker hvordan dine magiske konti tømmes.",
         "correct": false,
         "nextId": "end_bad"
       },

@@ -280,12 +280,14 @@ border: 1px solid rgba(199, 167, 88, 0.4);
 }
 
 .character-desc {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    color: var(--text-color);
-    opacity: 0.9;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--text-color);
+  opacity: 0.9;
+  text-align: left;
 }
+
 
 .stat-box {
     display: flex;
@@ -297,17 +299,18 @@ border: 1px solid rgba(199, 167, 88, 0.4);
 }
 
 .stat-label {
-    color: var(--text-color);
-    width: 40%;
-    text-align: left;
+  color: var(--text-color);
+  width: 50%;
+  text-align: left;
+  padding-right: 8px; // Tilføjer lidt luft mellem tekst og bar
 }
 
 .stat-bar {
-    width: 60%;
-    height: 6px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 3px;
-    overflow: hidden;
+  width: 50%;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .stat-fill {
@@ -525,63 +528,49 @@ border: 1px solid rgba(199, 167, 88, 0.4);
       
 }
 .security-bar-container {
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--highlight-color);
-    font-family: 'Cinzel', serif;
-  }
-  
-  progress#securityBar {
-    width: 80%;
-    height: 20px;
-    appearance: none;
-    border: 1px solid var(--highlight-color);
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-  
-  progress#securityBar::-webkit-progress-bar {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  progress#securityBar::-webkit-progress-value {
-    background-color: var(--highlight-color);
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  z-index: 999;
+  color: var(--highlight-color);
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
   }
 
-  .security-bar-container {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    z-index: 999;
-    color: var(--highlight-color);
-    text-align: center;
-    font-family: 'Cinzel', serif;
-  
-    @media screen and (max-width: 768px) {
-      position: static;
-      margin: 20px auto;
-      text-align: center;
-    }
-  
-    label {
-      display: block;
-      margin-bottom: 6px;
-    }
-  
-    progress {
-      width: 180px;
-      height: 16px;
-      border: 1px solid var(--highlight-color);
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  
-    progress::-webkit-progress-value {
-      background: linear-gradient(to right, #c7a758, #ffe29f);
-    }
-  
-    progress::-webkit-progress-bar {
-      background: rgba(255, 255, 255, 0.05);
-    }
+  progress#securityBar {
+    appearance: none;
+    width: 180px;
+    height: 20px;
+    border: 2px solid var(--highlight-color);
+    border-radius: 8px;
+    background: radial-gradient(ellipse at center, #241625 0%, #1d1014 100%);
+    box-shadow: 0 0 10px rgba(199, 167, 88, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
   }
+
+  progress#securityBar::-webkit-progress-bar {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  progress#securityBar::-webkit-progress-value {
+    background: linear-gradient(90deg, #ffe29f, #c7a758, #b89238);
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+
+  @media screen and (max-width: 1024px) {
+    position: static;
+    margin: 20px auto;
+  }
+}
+
   .scenario-section {
     text-align: center;
     max-width: 800px;
